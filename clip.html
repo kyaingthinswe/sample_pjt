@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="" >
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        
+        
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+}
+.card{
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    backdrop-filter: blur(30px);
+}
+
+.card:hover{
+    background-color: #fefefe;
+    transform: translateY(-10px);
+    
+}
+.card::before{
+    content: "";
+    width: 500px;
+    height: 300px;
+    clip-path: circle(0% at 10px 10px);
+    position: absolute;
+    /* top:-50px;
+    left: -50px; */
+    z-index: -1;
+    transition: 0.5s;
+    color: #333333;
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to right, #0072ffdd, #00c6ffdd);
+    background: linear-gradient(to right, #0072ffdd, #00c6ffdd);
+    /* animation: cb 4s ease-in; */
+}
+.card:hover{
+    transform: translateY(-10px);
+    color: #FFFFFF;
+}
+.card:hover::before{
+    clip-path: circle(130% at 10px 10px);
+
+}
+
+        
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                
+                <div class="card mt-4">
+                    <div class="p-4 text-center">
+                        <h2>Hello World</h2>
+                    </div>
+                    <div class="card-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti neque cum ab animi, officia quasi quis rem sed architecto iure illum sequi minus assumenda dolorum voluptatum aspernatur, vitae temporibus aliquam.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+<!--    <svg viewBox="0 0 170 193">-->
+<!--        <path fill-rule="evenodd" fill="rgb(238, 21, 21)" d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z"></path>-->
+<!--    </svg>-->
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+       
+
+    </script>
+</body>
+</html>

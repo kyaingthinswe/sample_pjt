@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="" >
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .control{
+            width: 1000px;
+            height: 600px;
+            position: relative;
+        }
+        .one{
+            position: absolute;
+            width: 600px;
+            height: 200px;
+            background-color: #ee1515;
+            margin: 100px auto;
+            border-top-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+        }
+        .two{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            right: 401px;
+            top: -28px;
+            width: 600px;
+            height: 200px;
+            background-color: #490c2e85;
+            margin: 100px auto;
+            border-top-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+  
+    <section class="main container-fluid">
+        <div class="row">
+            <div class="col-12">
+               <div class="control">
+                <div class="two"></div>
+                <!-- <div class="one" onmouseover="mOver()" onmouseout="mOut()"></div> -->
+                <div class="one"></div>
+               </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h2>Hello World</h2>
+                    </div>
+                    <div class="card-body">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                
+            </div>
+            <div class="col-4">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        // $('.one').hover(function(){
+        //     $('.two').css('display','block');
+        // });
+
+            $('.one').on('mouseenter',function(){
+                $('.two').fadeToggle(500);
+            })
+        // let two = document.querySelector('.two');
+        
+
+        // function mOver(){
+        //     two.style.display = 'block';
+        // }
+        // function mOut(){
+        //     two.style.display = 'none';
+            
+        // }
+
+    </script>
+</body>
+</html>
